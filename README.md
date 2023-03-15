@@ -2,6 +2,10 @@
 
 A full-stack application for AI enthusiasts, VirtuaVisage allows users to generate images using the Stable Diffusion model and share them with the community.
 
+## Demo
+
+The demo can be accessed at https://virtuavisage.netlify.app/
+
 ## Scripts
 
 Run the server in development mode:
