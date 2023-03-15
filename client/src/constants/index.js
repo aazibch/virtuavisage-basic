@@ -46,3 +46,11 @@ export const surpriseMePrompts = [
   'A man wanders through the rainy streets of Tokyo, with bright neon signs, 50mm',
   'A Space Shuttle flying above Cape Town, digital art'
 ];
+
+let urlBase = 'https://virtuavisage-api.up.railway.app';
+
+if (process.env.NODE_ENV === 'development') {
+  urlBase = 'http://localhost:8080';
+}
+
+export { urlBase };

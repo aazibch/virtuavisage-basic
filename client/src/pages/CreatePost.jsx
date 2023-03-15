@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { preview } from '../assets';
 import { getRandomPrompt } from '../utils';
 import { FormField, Loader } from '../components';
+import { urlBase } from '../constants';
 
 const CreatePost = () => {
   const navigate = useNavigate();
@@ -19,16 +20,13 @@ const CreatePost = () => {
     if (form.prompt) {
       try {
         setGeneratingImg(true);
-        const response = await fetch(
-          'https://virtuavisage-api.up.railway.app/api/v1/stable',
-          {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ prompt: form.prompt })
-          }
-        );
+        const response = await fetch(`${urlBase}/api/v1/stable`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ prompt: form.prompt })
+        });
 
         const data = await response.json();
 
@@ -50,16 +48,13 @@ const CreatePost = () => {
       setLoading(true);
 
       try {
-        const response = await fetch(
-          'https://virtuavisage-api.up.railway.app/api/v1/post',
-          {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(form)
-          }
-        );
+        const response = await fetch(`${urlBase}/api/v1/post`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(form)
+        });
 
         await response.json();
         navigate('/');

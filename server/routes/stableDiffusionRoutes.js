@@ -27,15 +27,15 @@ const {
 router.route('/').post(async (req, res) => {
   const { prompt } = req.body;
   try {
-    const request = buildGenerationRequest('stable-diffusion-512-v2-1', {
+    const request = buildGenerationRequest('stable-diffusion-768-v2-1', {
       type: 'text-to-image',
       prompts: [
         {
           text: prompt
         }
       ],
-      width: 512,
-      height: 512,
+      width: 768,
+      height: 768,
       samples: 1,
       cfgScale: 13,
       steps: 30,
