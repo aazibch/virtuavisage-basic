@@ -4,7 +4,7 @@ A full-stack application for AI enthusiasts, VirtuaVisage allows users to genera
 
 ## Demo
 
-The demo can be accessed at https://virtuavisage.netlify.app/
+The demo can be accessed at https://virtuavisage-basic.netlify.app/.
 
 ## Scripts
 
