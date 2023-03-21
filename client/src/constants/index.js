@@ -47,7 +47,7 @@ export const surpriseMePrompts = [
   'A Space Shuttle flying above Cape Town, digital art'
 ];
 
-let urlBase = 'https://virtuavisage-api.up.railway.app';
+let urlBase = 'https://virtuavisage-basic-api.up.railway.app';
 
 if (process.env.NODE_ENV === 'development') {
   urlBase = 'http://localhost:8080';

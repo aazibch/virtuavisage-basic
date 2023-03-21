@@ -8,6 +8,16 @@ The demo can be accessed at https://virtuavisage.netlify.app/
 
 ## Scripts
 
+Install server dependencies:
+
+    cd server
+    npm install
+
+Install client dependencies:
+
+    cd client
+    npm install
+
 Run the server in development mode:
 
     cd server
