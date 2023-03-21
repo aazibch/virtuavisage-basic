@@ -27,7 +27,7 @@ router.route('/').post(async (req, res) => {
   try {
     const { name, prompt, photo } = req.body;
     const photoUrl = await cloudinary.uploader.upload(photo, {
-      folder: 'virtuavisage-generations'
+      folder: 'virtuavisage-basic-generations'
     });
 
     const newPost = await Post.create({

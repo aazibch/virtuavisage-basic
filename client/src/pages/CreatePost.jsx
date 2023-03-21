@@ -20,7 +20,7 @@ const CreatePost = () => {
     if (form.prompt) {
       try {
         setGeneratingImg(true);
-        const response = await fetch(`${urlBase}/api/v1/stable`, {
+        const response = await fetch(`${urlBase}/api/v1/stable-diffusion`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
