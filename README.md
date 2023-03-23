@@ -1,6 +1,11 @@
 # VirtuaVisage
 
-A full-stack application for AI enthusiasts, VirtuaVisage allows users to generate images using the Stable Diffusion model and share them with the community.
+A full-stack application for AI enthusiasts, VirtuaVisage allows users to:
+
+- Generate artifacts using the Stable Diffusion deep learning, text-to-image model.
+- Share the artifacts with the community.
+
+Stability AI's JavaScript gRPC client is used to generate and fetch the artifacts, while Cloudinary's SDK is utilized to store the artifacts, and MongoDB is used as the database.
 
 ## Demo
 
